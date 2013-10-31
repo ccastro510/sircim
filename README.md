@@ -1,0 +1,23 @@
+sircim
+======
+Archivos omitidos:
+
+# Archivos de respaldo
+*~
+ 
+# Bootstrap
+app/bootstrap*
+ 
+# Symfony directories
+vendor/*
+*/logs/*
+*/cache/*
+web/uploads/*
+web/bundles/*
+ 
+# Configuration files
+app/config/parameters.ini
+app/config/parameters.yml
+ 
+#Carpeta nbproject de netbeans
+nbproject/
