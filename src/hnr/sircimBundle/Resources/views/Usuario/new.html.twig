@@ -1,0 +1,86 @@
+{% extends 'hnrsircimBundle::Layout.html.twig' %}
+
+{% block body -%}
+    <h1>Usuario creation</h1>
+
+    <form action="{{ path('usuario_create') }}" method="post" {{ form_enctype(form) }}>
+        {{ form_widget(form)}}    
+
+        {# {{ form_row(form.usLogin) }}
+        {{ form_row(form.usCorreo) }}
+        {{ form_row(form.usContrasena) }}
+ #}
+
+{# idempleado #}
+
+        
+        <select id="idempleado" name="listaempleado">
+            {% for empleado in empleados %}
+            <option value={{empleado.Idempleado}}>{{empleado.Nombre}}</option>
+            {% endfor %}
+        </select><br>
+
+{# fin idempleado #}
+
+        {# {{ form_row(form.usActualizarContrasena) }} #}
+        <label>Activo/Inactivo</label>
+        <div class="slideThree">   
+            <input type="checkbox" value='0' id="slideThree" name="estado1" />
+            <label for="slideThree"></label>
+        </div>
+        <label>Desbloqueado/Bloqueado</label>
+        <div class="slideThree">    
+            <input type="checkbox" value='0' id="slideThree2" name="estado2" />
+            <label for="slideThree2"></label>
+        </div>
+
+
+         
+        
+        
+        <p>
+            <button type="submit">Create</button>
+        </p>
+    </form>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('usuario') }}">
+            Back to the list
+        </a>
+    </li>
+</ul>
+{% endblock %}
+
+
+{% block script %}
+    
+    <script type="text/javascript">
+
+    jQuery(document).ready(function($) {
+
+        $( "#idempleado" ).change(function() {
+            alert($(this).val());
+        });
+
+        $("#slideThree" ).click(function() {
+            var valor = $("#slideThree").value;
+            if ($(this).is (':checked'))
+            {
+                
+            }
+            else
+            {
+                
+            }
+
+
+            
+        });    
+    });
+
+
+    </script>
+
+
+{% endblock %}

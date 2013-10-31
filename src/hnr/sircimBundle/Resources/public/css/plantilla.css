@@ -1,0 +1,35 @@
+body{
+	color: #7F7F7F;
+	font-family:"Calibri";
+}
+
+
+
+
+#linea {
+	height: 7px;
+	width: 100%;
+	background: #0098D9;
+	min-width: 1000px;
+}
+
+
+#logo {
+	
+	height: 56px;
+	width: 90%;
+	margin: 0 auto;
+	min-width: 1000px;
+}
+
+#logo a {
+	
+}
+
+#pie{
+	width: 90%;
+	border-top: 1px solid #E3E3E3;
+	margin: 0 auto;
+	text-align: left;
+	min-width: 900px;
+}

@@ -1,0 +1,109 @@
+/*
+-----------------------------Tabla--------------------------------
+*/
+
+
+
+.listados{
+    
+    width:972px;
+    border-collapse:collapse;
+    margin: 0 auto;
+    color: #555555;
+}
+
+.listados th{
+    padding-left: 10px;
+
+    text-align: left;
+}
+
+.listados th:nth-child(3), th:nth-child(4) {
+    text-align: center;
+}
+
+.listados tr td {
+    text-align: left;
+}
+
+.listados td{
+    padding-left: 10px;
+    width: 69px;
+}
+
+.listados td:nth-child(2) {
+    padding-left: 30px;
+}
+
+
+.listados th:nth-child(2) {
+    padding-left: 30px;
+    width: 415px;
+}
+
+.listados th:nth-child(3) {
+    width: 245px;
+}
+
+.listados th:nth-child(4) {
+    width: 162px;
+    text-align: center; 
+}
+
+.listados th:nth-child(5) {
+    width: 81px;
+}
+
+.listados td:nth-child(3), .listados td:nth-child(4) {
+    text-align: center;
+    padding-top: 3px;
+}
+
+.listados th:nth-child(3) {
+    width: 245px;
+}
+
+td .listados {
+    text-align: left;
+}
+
+.listados tr{
+    height: 27px;
+    border-bottom: 1px solid #E2E2E2;
+    margin: 0 auto;
+}
+
+.listados img {
+    height: 15px; 
+    width: 15px; 
+    display: none;
+}
+
+.listados tr:nth-child(1) {
+    background: white;
+}
+
+/*.listados tr:nth-child(odd) {
+    background: #F2F2F2;
+}*/
+
+
+
+.listados tr:hover {
+    background: #F2F2F2;
+}
+
+
+.listados tr:hover img {
+    display: inline;
+    
+}
+
+
+
+
+
+
+/*
+-----------------------------FIN tabla--------------------------------
+*/

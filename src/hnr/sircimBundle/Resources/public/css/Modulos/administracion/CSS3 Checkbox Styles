@@ -1,0 +1,11 @@
+<h1>CSS3 Checkbox Styles</h1>
+
+
+
+
+
+<!-- Slide THREE -->
+<div class="slideThree">	
+	<input type="checkbox" value="None" id="slideThree" name="check" />
+	<label for="slideThree"></label>
+</div>

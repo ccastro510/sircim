@@ -1,0 +1,69 @@
+{% extends 'hnrsircimBundle::Layout.html.twig' %}
+
+{% block body -%}
+    {# <h1>Usuario list</h1> #}
+    <br>
+
+
+
+    <table class="listados">
+        <thead>
+            <tr>
+                
+                <th>No.</th>
+                <th>Nombre</th> 
+                <th>Activo/Inactivo</th>
+                <th>Desbloqueado/Bloqueado</th>
+                <th></th>
+                
+            </tr>
+        </thead>
+        <tbody>
+        {% for key, entity in entities %}
+            <tr>
+                <td>{{key+1 }}</td>
+                <td>{{ attribute(empleados, key) }}</td>
+                <td>
+                    <div class="slideThree">   
+                        <input type="checkbox" {% if entity.usEstadoActivo == 1%} checked {% endif %} id="slideThree" name="estado1" />
+                        <label for="slideThree"></label>
+                    </div>
+
+
+                    {# {{ entity.usEstadoActivo }} #}</td>
+                <td>
+                    <div class="slideThree">   
+                        <input type="checkbox" {% if entity.usEstadoBloqueado == 1%} checked {% endif %} id="slideThree2" name="estado2" />
+                        <label for="slideThree2"></label>
+                    </div>
+                    {# {{ entity.usEstadoBloqueado }} #}</td>
+
+                
+                <td>
+                {# <ul>
+                    <li> #}
+                        <a href="{{ path('usuario_show', { 'id': entity.id }) }}">
+                            <img src="{{ asset('bundles/hnrsircim/img/edit.png') }}">
+                        </a>
+                    {# </li>
+                    <li>
+                     #} <a href="{{ path('usuario_edit', { 'id': entity.id }) }}">
+                            <img src="{{ asset('bundles/hnrsircim/img/detalle.png') }}">
+                        </a>
+                    {# </li>
+                </ul> #}
+                </td>
+                
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+        <ul>
+        <li>
+            <a href="{{ path('usuario_new') }}">
+                Create a new entry
+            </a>
+        </li>
+    </ul>
+    {% endblock %}
